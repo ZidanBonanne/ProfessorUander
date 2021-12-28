@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   margin: 0;
+  background-color: rgb(73, 73, 231);
 }
 * {
   box-sizing: border-box;
@@ -14,8 +15,8 @@
 }
 
 .perfil {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   padding: 0;
   border-radius: 100%;
   border-color: white;
@@ -30,8 +31,9 @@
 }
 .agendarAula {
   height: 3rem;
+  font-size: 8px;
   padding: 0;
-  width: 10%;
+  width: 12%;
   border-radius: 10%;
   border-color: white;
   border-style: solid;
@@ -41,10 +43,10 @@
   justify-content: center;
   cursor: pointer;
   position: flex;
-  transform: translate(-50%, 0%);
+  transform: translate(-25%, 0%);
 }
 .titlePrincipal {
-  font-size: 60px;
+  font-size: 25px;
   margin: 0%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: white;
@@ -161,6 +163,12 @@
   align-items: center;
   text-align: center;
   justify-content: space-around;
+
+  border-bottom: 2px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
 }
 .boxe {
   background-color: #dfe9f5;
@@ -183,7 +191,7 @@
 .textoCaixas {
   text-align: center;
   font-size: medium;
-  font-size: 20px;
+  font-size: 15px;
 }
 .caixaBoxeTexto {
   width: 30%;
@@ -191,4 +199,26 @@
   margin: 0;
   align-self: start;
   align-items: start;
+}
+.semBordas {
+  border-bottom: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+}
+.fotosGaleria {
+  width: 16%;
+}
+.galery {
+  width: 70%;
+  margin: 0 15%;
+  overflow: hidden;
+}
+
+.galeria {
+  width: 600%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
