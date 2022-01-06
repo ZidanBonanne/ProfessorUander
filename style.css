@@ -1,6 +1,6 @@
 ﻿body {
   background: grey;
-  align-items: center;
+
   width: 100%;
   height: 100%;
   margin: 0;
@@ -237,4 +237,21 @@
   border: 1px;
   border-style: solid;
   flex-direction: column;
+}
+#rodape {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+#contatos {
+  background-color: rgb(65, 65, 151);
+}
+
+.icons {
+  width: 2rem;
+  margin-left: 2%;
+  margin-right: 2%;
 }

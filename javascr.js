@@ -16,16 +16,26 @@ const closeModal = function () {
 btn.addEventListener('click', openModal);
 
 btnClose.addEventListener('click', closeModal);
-
+let contadorDuvida1 = 0;
 const openDuvida1 = function () {
-  respostaDuvida1.classList.remove('hidden');
-  console.log('funcinou');
+  contadorDuvida1 += 1;
+  if (contadorDuvida1 % 2 === 1) {
+    respostaDuvida1.classList.remove('hidden');
+    console.log('funcinou');
+  } else {
+    respostaDuvida1.classList.add('hidden');
+  }
 };
 
 btnDuvida1.addEventListener('click', openDuvida1);
+let contadorDuvida2 = 0;
 const openDuvida2 = function () {
-  respostaDuvida2.classList.remove('hidden');
-  console.log('funcinou');
+  contadorDuvida2 += 1;
+  if (contadorDuvida2 % 2 === 1) {
+    respostaDuvida2.classList.remove('hidden');
+  } else {
+    respostaDuvida2.classList.add('hidden');
+  }
 };
 
 btnDuvida2.addEventListener('click', openDuvida2);
