@@ -1,257 +1,136 @@
-﻿body {
-  background: grey;
-
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
 * {
-  box-sizing: border-box;
-  align-content: center;
-  align-items: center;
-
-  align-self: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.perfil {
-  width: 75px;
-  height: 75px;
-  padding: 0;
-  border-radius: 100%;
-  border-color: white;
-  border-width: 2px;
-  align-content: center;
-  margin-left: 5%;
+.bg-primary-color {
+  background-color: #fff;
+}
+.bg-secondary-color {
+  background-color: #ece8ea;
+}
+.bg-dark-color {
+  background-color: #050505;
+}
+.primary-color {
+  color: #050505;
+}
+.secondary-color {
+  color: #7a7a7a;
+}
+
+/*nav bar*/
+#navbar {
+  border-bottom: 1px solid #7a7a7a;
+}
+#navbar a:hover {
+  color: #7a7a7a;
+}
+#navbar a:active {
+  border-bottom: 1px solid #050505;
+}
+.navbar-brand {
+  display: flex;
+}
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar-brand span {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  color: #7a7a7a;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+#navbar-items .navbar-nav {
+  margin: 0 1em;
+}
+
+#slider {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#slider .carousel-caption {
+  bottom: 3em;
+}
+#slider .carousel-caption h5 {
+  font-size: 2.5em;
+  text-shadow: #000 2px 2px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+#slider .btn {
+  padding: 0.3 0.8em;
+  font-size: 1em;
+  margin-top: 1em;
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #111;
+  font-size: 3em;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #222;
+  opacity: 0.8;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
+@media (min-width: 768px) {
+  #slider .carousel-caption {
+    bottom: 15em;
+  }
+  #slider .carousel-caption h5 {
+    font-size: 4em;
+    text-shadow: #000 2px 3px;
+  }
+}
+
+.margin {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.quem-eu-sou {
+  background-color: white;
+}
+.rodape {
+  background-color: #000;
+  color: white;
+  padding: 3em 2em;
+  text-align: center;
+}
+.icone {
+  width: 20px;
+  height: 20px;
+}
+.icone-rodape {
+  color: white;
+  margin-right: 1em;
+  font-size: 1.5em;
   cursor: pointer;
 }
 .link {
-  width: 0;
-  align-content: center;
+  text-decoration: none;
 }
-.agendarAula {
-  height: 3rem;
-  font-size: 8px;
-  padding: 0;
-  width: 12%;
-  border-radius: 10%;
-  border-color: white;
-  border-style: solid;
-  margin-right: 0;
-  background-color: #c5d4e8;
-  color: black;
-  justify-content: center;
-  cursor: pointer;
-  position: flex;
-  transform: translate(-25%, 0%);
-}
-.titlePrincipal {
-  font-size: 25px;
-  margin: 0%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: white;
-  /* height: 40px; */
-  padding: 0;
-  position: flex;
+
+.imagens-centrais {
   width: 100%;
-  position: flex;
-  text-align: center;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 0;
 }
-.menu {
-  background-color: #002f5c;
-  width: 100%;
-  /* height: 50%; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-content: center;
-  position: flex;
-  transform: translate(0%, 0%);
-}
-#cabecalho {
-  justify-content: space-between;
-  /* position: fixed; */
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 0;
-  position: sticky;
-}
-.hidden {
-  display: none;
-}
-.modal {
-  position: absolute;
-  top: 70%;
-  left: 37%;
-
-  /* transform: translate(-50%, 20%); */
-  width: 30%;
-  background-color: white;
-  padding: 6rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
-}
-.close-modal {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: rgb(175, 14, 14);
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-.quemEuSou {
-  position: flex;
-  background-color: white;
-  padding: 0;
-  margin: 0;
-  border-color: black;
-  border-style: solid;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-  align-content: center;
-  display: flex;
-  width: 100%;
-  margin: 0;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.conteudoQuemEuSou {
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  width: 90%;
-  position: flex;
-}
-
-.boxTitle {
-  margin: 0 0;
-  padding: 0;
-  width: 90%;
-  position: flex;
-  text-align: center;
-}
-
-.title1 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: black;
+#title {
   font-size: 30px;
-  position: flex;
-  text-align: center;
 }
-.box {
-  background-color: #dfe9f5;
-  padding: 0;
-  margin: 0;
-  align-content: center;
-  display: flex;
-  width: 100%;
-  margin: 0;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
-
-  border-bottom: 2px;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-  border-style: solid;
-}
-.boxe {
-  background-color: #dfe9f5;
-  justify-content: space-between;
-  width: 90%;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 0;
-  display: flex;
-}
-.icones {
-  width: 8rem;
-}
-.caixaBoxe {
-  width: 30%;
-  padding: 0;
-  margin: 0;
-}
-.textoCaixas {
-  text-align: center;
-  font-size: medium;
-  font-size: 15px;
-}
-.caixaBoxeTexto {
-  width: 30%;
-  padding: 0;
-  margin: 0;
-  align-self: start;
-  align-items: start;
-}
-.semBordas {
-  border-bottom: 0px;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-  border-style: solid;
-}
-.fotosGaleria {
-  width: 16%;
-}
-.galery {
-  width: 70%;
-  margin: 0 15%;
-  overflow: hidden;
-}
-
-.galeria {
-  width: 600%;
-  animation-name: animacao;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-.respostaDuvida1 {
-  width: 100%;
-  background-color: white;
-  /* box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
-}
-.duvidas {
-  background-color: #dfe9f5;
-  /* align-content: center;
-  align-items: center; */
-  text-align: center;
-  display: flex;
-  width: 60%;
-  margin: 0 20%;
-  border: 1px;
-  border-style: solid;
-  flex-direction: column;
-}
-#rodape {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-}
-#contatos {
-  background-color: rgb(65, 65, 151);
-}
-
-.icons {
-  width: 2rem;
-  margin-left: 2%;
-  margin-right: 2%;
+.border-inferior {
+  border-bottom: 1px solid #050505;
 }
