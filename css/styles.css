@@ -1,0 +1,245 @@
+﻿body {
+  font-family: "Abel", sans-serif;
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+h3 {
+  font-family: "Source Code Pro", sans-serif;
+}
+i:hover {
+  transition-delay: 0.1s;
+}
+.facebook:hover {
+  color: #3b5998;
+}
+.instagram:hover {
+  color: #dd2a7b;
+}
+.whatsapp:hover {
+  color: #34af23;
+}
+.bg-primary-color {
+  background-color: #fff;
+}
+.bg-secondary-color {
+  background-color: #ece8ea;
+}
+.bg-dark-color {
+  background-color: #050505;
+}
+
+.secondary-color {
+  color: #7a7a7a;
+}
+
+/*nav bar*/
+#navbar {
+  border-bottom: 1px solid #000;
+  background-color: rgb(16 56 79);
+}
+.nav-link {
+  color: white;
+
+  border: 0 solid #f0c808;
+}
+.primary-color:hover {
+  color: #f0c808;
+  border: 2px solid #f0c808;
+  border-radius: 20px;
+  /* transition-delay: 0.2s; */
+}
+/* #navbar a:active {
+  border-bottom: 1px solid #050505;
+} */
+.navbar-brand {
+  display: flex;
+}
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar-brand span {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  color: #7a7a7a;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+#navbar-items .navbar-nav {
+  margin: 0 1em;
+}
+
+#slider {
+  margin-bottom: 1em;
+}
+#slider .carousel-caption {
+  bottom: 3em;
+}
+#slider .carousel-caption h5 {
+  font-size: 2.5em;
+  text-shadow: #000 2px 2px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+#slider .btn {
+  padding: 0.3 0.8em;
+  font-size: 1em;
+  margin-top: 1em;
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #111;
+  font-size: 3em;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #222;
+  opacity: 0.8;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
+@media (max-width: 760px) {
+  #slider .carousel-caption {
+    bottom: 15em;
+  }
+  #slider .carousel-caption h5 {
+    font-size: 4em;
+    text-shadow: #000 2px 3px;
+  }
+  #title {
+    margin-left: 30%;
+    color: white;
+  }
+}
+
+.margin {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.rodape {
+  background-color: #000;
+  color: white;
+  padding: 3em 2em;
+  text-align: center;
+}
+.icone {
+  width: 20px;
+  height: 20px;
+}
+.icone-rodape {
+  color: white;
+  margin-right: 1em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+#button-agendar-aula {
+  color: white;
+}
+
+.imagens-centrais {
+  width: 100%;
+}
+
+#title {
+  font-size: 30px;
+  color: white;
+}
+.border-inferior {
+  border-bottom: 1.5px solid rgb(32, 32, 32);
+}
+
+.btn-questions {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.card-header {
+  background-color: rgb(32, 32, 32);
+  padding: 0;
+  margin: 0px;
+  margin-top: 5px;
+}
+.card {
+  background-color: rgb(32, 32, 32);
+  padding: 0;
+  margin: 0;
+}
+.btn-agendar-aula {
+  background-color: #dd1c1a;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 300px;
+  height: 80px;
+}
+.btn-agendar-aula:hover {
+  background-color: #07a0c3;
+  color: white;
+  border: 2px solid white;
+}
+.hidden {
+  display: none;
+}
+.btn-carousel {
+  background-color: white;
+  color: white;
+}
+#quemsou {
+  background-color: #07a0c3;
+  color: #000;
+}
+#facasuaaula {
+  background-color: #f0c808;
+}
+/* 
+#086788 azul escuro
+#07A0c3 azul claro
+#f0c808 amarelo
+#fff1d0 beje 
+#dd1c1a vermelho */
+#comoFunciona {
+  background-color: #fff1d0;
+  color: #000;
+}
+#eventos-carousel {
+  background-color: #fff1d0;
+  color: black;
+}
+#duvidas {
+  background-color: #f0c808;
+  color: #000;
+}
+#aulas {
+  background-color: #086788;
+}
+.quem-eu-sou {
+  display: flex;
+  justify-content: center;
+}
+.div-quem-eu-sou {
+  align-self: center;
+}
+.texto-quem-eu-sou {
+  align-items: center;
+}
+
+.respostas {
+  color: white;
+}
